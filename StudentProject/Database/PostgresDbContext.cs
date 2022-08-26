@@ -7,6 +7,6 @@ namespace StudentProject.Database
     {
         public PostgresDbContext(DbContextOptions<PostgresDbContext> options) : base(options) { }
 
-        public DbSet<PostgresModel> postgresModels{ get; set; }
+        public DbSet<PostgresModel> postgresModels { get; set; }
     }
 }

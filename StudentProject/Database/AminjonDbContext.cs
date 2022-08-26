@@ -7,6 +7,6 @@ namespace StudentProject.Database
     {
         public AminjonDbContext(DbContextOptions<AminjonDbContext> options) : base(options) { }
 
-        public DbSet<AminjonModel> aminjonModels { get; set; }      
+        public DbSet<AminjonModel> aminjonModels { get; set; }
     }
 }

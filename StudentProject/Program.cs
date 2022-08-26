@@ -15,13 +15,13 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AminjonDbContext>(options => options.UseNpgsql(
     builder.Configuration.GetConnectionString("AminjonConnection")));
 
-builder.Services.AddScoped<IAminjonService, AminjonService>();
+builder.Services.AddTransient<IAminjonService, AminjonService>();
 
 
 builder.Services.AddDbContext<PostgresDbContext>(options => options.UseNpgsql(
     builder.Configuration.GetConnectionString("PostgresConnection")));
 
-builder.Services.AddScoped<IPostgresService, PostgresService>();
+builder.Services.AddTransient<IPostgresService, PostgresService>();
 
 var app = builder.Build();
 

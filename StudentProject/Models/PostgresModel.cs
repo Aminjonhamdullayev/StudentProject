@@ -16,9 +16,6 @@ namespace StudentProject.Models
         [Column("commandline")]
         public string? Email { get; set; }
 
-        public static implicit operator PostgresModel(List<PostgresModel> v)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }
